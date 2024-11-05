@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* defoult */
+
+* {
+  font-family: "Fira Code", monospace;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid green !important; */
+}
+
+body {
+  background-image: url(./images/abstract_digital_art_geometry-82374.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-width: 100%;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* header */
+
+.header {
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  height: 85%;
+  background-color: rgba(49, 49, 49, 0.778);
+  border-radius: 30px;
+  border: 6px solid rgb(27, 27, 27);
+}
+
+/* nav */
+
+.burger {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 30px;
+  height: auto;
+  margin-bottom: 6px;
+}
+
+.burger div {
+  margin-top: 10px;
+  width: 100%;
+  background-color: white;
+  height: 3px;
+}
+
+.navbar {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav_list {
+  height: 50px;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav_element {
+  font-size: 1.1rem;
+  list-style: none;
+}
+a {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+/* info */
+
+.info {
+  margin-top: 10px;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  max-width: 45%;
+}
+
+.info_title {
+  font-size: 1.8rem;
+}
+
+.info_subtitle {
+  text-align: left;
+  margin-block: 50px;
+  font-weight: 100;
+  color: rgb(213, 213, 213);
+}
+
+.btn {
+  transition: 0.4s;
+  padding: 7px 40px;
+  background-color: rgb(70, 70, 70);
+  border-style: none;
+  border-radius: 20px;
+}
+
+.btn:hover {
+  background-color: rgb(48, 48, 48);
+}
+
+.info_image-container {
+  display: flex;
+  margin-left: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.info_image-container img {
+  width: 80%;
+  height: 80%;
+  filter: invert(0.8);
+}
+
+/* адаптация */
+
+@media (max-width: 1090px) {
+  .nav_list {
+    display: none;
+  }
+  .burger {
+    display: flex;
+  }
+}
+
+@media (max-width: 900px) {
+  .info {
+    flex-direction: column-reverse;
+  }
+  .info_image-container img {
+    max-width: 270px;
+    max-height: 280px;
+    min-width: 170px;
+  }
+}
+
+@media (max-width: 760px) {
+  .info_subtitle {
+    max-width: 300px;
+  }
+  .info_title {
+    max-width: 500px;
+  }
+}
